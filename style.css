@@ -1,3 +1,13 @@
 body{
     background-color: cadetblue;
 }
+#navbar{
+    display: flex;
+}
+#right-part-navbar{
+        display: flex;
+        align-items: center;
+}
+#right-part-navbar img{
+    width: 80px;
+}
