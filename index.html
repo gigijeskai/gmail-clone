@@ -5,30 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gmail clone</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <div id="container">
     <header>
+      <nav>
         <div id="navbar">
-            <div id="right-part-navbar">
-                <i class="bi bi-list"></i>
-                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r5.png" alt="">
-        </div><!-- chiusura #right-part-navbar -->
-        <div id="searchbar">
-<span><i class="bi bi-search"></i></span>
-<input type="text" placeholder="Cerca nella posta">
-<span><i class="bi bi-sliders"></i></span>
-        </div><!-- chiusura #right-part-navbar -->
-        <div id="left-part-navbar">
+          <div id="right-part-navbar">
+            <i class="bi bi-list"></i>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x_r5.png" alt="" />
+          </div>
+          <!-- chiusura #right-part-navbar -->
+          <div id="searchbar">
+            <span><i class="bi bi-search"></i></span>
+            <input type="text" placeholder="Cerca nella posta" />
+            <span><i class="bi bi-sliders"></i></span>
+          </div>
+          <!-- chiusura #right-part-navbar -->
+          <div id="left-part-navbar">
             <i class="bi bi-question-circle"></i>
             <i class="bi bi-gear"></i>
             <i class="bi bi-three-dots-vertical"></i>
-        </div><!-- chiusura #left-part-navbar -->
+          </div>
+          <!-- chiusura #left-part-navbar -->
+        </div>
+        <!-- chiusura #navbar -->
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <aside>
+        <button><i class="bi bi-pen"></i>Scrivi</button>
+        <ul>
+          <li><i class="bi bi-archive"></i>Posta in arrivo</li>
+          <li><i class="bi bi-star"></i>Speciali</li>
+          <li><i class="bi bi-clock"></i>Posticipati</li>
+          <li><i class="bi bi-caret-right"></i>Importanti</li>
+          <li><i class="bi bi-send"></i>Inviati</li>
+          <li><i class="bi bi-file-earmark"></i>Bozze</li>
+          <li><i class="bi bi-tag"></i>Categorie</li>
+          <li><i class="bi bi-caret-down"></i>Altro</li>
+        </ul>
+        <h3>Etichette<i class="bi bi-plus"></i></h3>
+        <ul>
+          <li><i class="bi bi-tag-fill"></i>[Imap]/Bozze</li>
+          <li><i class="bi bi-tag-fill"></i>[Imap]/Cestino</li>
+          <li><i class="bi bi-tag-fill"></i>[Imap]/Posta in uscita</li>
+          <li><i class="bi bi-tag-fill"></i>Inviati</li>
+        </ul>
+      </aside>
+      <section>
+        <div id="toolbar-section">
+          <div id="toolbar-section-top">
+            <div id="icon-top-left">
+              <div><input type="checkbox" /><i class="bi bi-caret-down"></i></div>
+              <div><i class="bi bi-arrow-clockwise"></i></div>
+              <div><i class="bi bi-three-dots-vertical"></i></div>
+            </div>
+            <!-- chiusura #icon-top-left -->
+          </div>
+          <!-- chiusura #toolbar-section-top -->
+          <div id="toolbar-section-bottom">
+            <div id="paginazione">paginazione</div>
+            <div><i class="bi bi-arrow-left-short"></i></div>
+            <div><i class="bi bi-arrow-right-short"></i></div>
+            <div>It<i class="bi bi-caret-down"></i></div>
+          </div>
+        </div>
+        <!-- chiusura #toolbar-section -->
+        <div id="emails"></div>
+        <!-- chiusura #emails -->
+      </section>
+    </main>
   </body>
-  </div> <!-- chiusura #container -->
 </html>
