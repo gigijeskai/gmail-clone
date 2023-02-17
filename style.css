@@ -29,18 +29,7 @@ section {
     background-color: #202124;;
 }
 
-/* navbar */
-#navbar{
-    display: flex;
-    font-size: 24px;
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto;
-    padding: 8px;
-    box-sizing: border-box;
-    min-width: min-content;
-    flex-direction: column;
-}
+
 #right-part-navbar{
         display: flex;
         align-items: center;
@@ -49,7 +38,7 @@ section {
 #right-part-navbar img{
     width: 109px;
 }
-#left-part-navbar{
+#topbar-aside{
     display: flex;
     gap: 1rem;
 }
