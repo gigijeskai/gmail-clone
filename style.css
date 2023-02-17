@@ -86,8 +86,9 @@ justify-content: space-between;
 }
 
 #scroll-div{
-    overflow-y: scroll;
-    height: 3000px;
+    height: 420px;
+  overflow-y: auto;
+  margin-bottom: 30px;
 }
 
 ul {
