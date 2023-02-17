@@ -36,10 +36,40 @@ section {
 #navbar img{
     width: 109px;
 }
+
+/* aside  */
 #topbar-aside{
     display: flex;
     gap: 1rem;
+    padding: 8px 16px 8px 16px;
+    margin: 0 auto;
 }
+#topbar-aside i{
+    font-size: 24px;
+   padding-left: 8px;
+}
+
+aside button{
+    border-radius: 16px;
+    color: #5f6368;
+    height: 56px;
+    min-width: 96px;
+    height: 56px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding-inline: 30px;
+    margin: 8px 0 16px 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+  }
 #searchbar{
     display: flex;
     gap: 1rem;
