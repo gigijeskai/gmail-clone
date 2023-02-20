@@ -164,7 +164,7 @@ section{
     padding-right: 1rem;
   }
 
-  #email{
+  .email{
     display: flex;
     justify-content: space-between;
     margin: 0px;
