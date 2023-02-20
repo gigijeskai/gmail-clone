@@ -10,6 +10,21 @@ body{
     display: flex;
 }
 
+/* reset stile button */
+.btn-reset {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+  }
+
 main{
     width: 95%;
     margin: 0 5px 0 0px;
@@ -17,16 +32,12 @@ main{
 
 nav{
     display: flex;
-    font-size: 24px;
+    font-size: 20px;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 8px;
+    padding-block: 8px;
     box-sizing: border-box;
     min-width: min-content;
-}
-
-section {
-    background-color: #202124;;
 }
 
 #navbar{
@@ -96,6 +107,8 @@ ul {
     padding: 0; 
     margin: 0; 
   }
+
+  /* topbaar main content  */
 #searchbar{
     display: flex;
     gap: 1rem;
@@ -103,6 +116,7 @@ ul {
     border: 1px solid transparent;
     border-radius: 8px;
     width: 70%;
+    padding: 6px;
 }
 
 #searchbar input{
@@ -122,8 +136,38 @@ left: 0px;
 #toolbar-section-top{
     display: flex;
     justify-content: space-between;
+    padding: 2px 0 18px 0;
 }
+
+#toolbar-section-top > div {gap: 1rem;}
 
 #icon-top-left, #icon-top-right{
     display: flex;
 }
+
+/* main content */
+
+section{
+    background-color: rgba(51,51,51,0.8);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow-y: hidden;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 24px;
+  }
+  toolbar-section-bottom-buttons, button{
+    width: 35%;
+    padding-block: 14px;
+  }
+  .btn-reset > i{
+    padding-right: 1rem;
+  }
+
+  #email{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+  }
+  
