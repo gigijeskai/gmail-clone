@@ -46,4 +46,23 @@ async function showAuthor() {
   }
 }
 
-showAuthor();
+window.onload = () => {
+  let filter = document.getElementById("filter");
+  let emailList = document.querySelector(".emails");
+
+  filter.addEventListener("keyup", filterItems);
+
+  function filterItems(e) {
+    let text = e.target.value.toLowerCase();
+    let emails = emailList.children;
+    Array.from(emails).forEach(function (email) {
+      let emailName = email.querySelector("div").textContent;
+      if (emailName.toLowerCase().indexOf(text) != -1) {
+        email.style.display = "flex";
+      } else {
+        email.style.display = "none";
+      }
+    });
+  }
+  showAuthor();
+};
