@@ -173,5 +173,15 @@ section{
   .left-part-email{
     display: flex;
     gap: 1rem;
+    width: 30%;
+  }
+  .email-object{width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+  .email-icons{
+    display: flex;
+    gap: 1rem;
   }
   
