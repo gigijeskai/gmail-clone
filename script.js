@@ -1,3 +1,4 @@
+//   make email body
 async function showAuthor() {
   let httpQuotes = await fetch("https://dummyjson.com/quotes?&limit=100");
   let httpPosts = await fetch("https://dummyjson.com/posts?&limit=100");
@@ -15,6 +16,7 @@ async function showAuthor() {
     const quote = arrayQuotes[i];
     const post = arrayPost[i];
 
+    // random hour function
     randomTime = () => {
       hrs = Math.round(Math.random() * 24);
       mins = Math.round(Math.random() * 60);
@@ -47,10 +49,25 @@ async function showAuthor() {
 }
 
 window.onload = () => {
+  // searchbar
   let filter = document.getElementById("filter");
   let emailList = document.querySelector(".emails");
-
   filter.addEventListener("keyup", filterItems);
+  let toggleMenu = document.getElementById("hamburger-menu");
+  let contentAside = document.getElementById("aside-container");
+  let iconAside = document.getElementsByTagName("i");
+  let isContentHidden = false;
+
+  toggleMenu.addEventListener("click", function () {
+    if (isContentHidden) {
+      contentAside.style.display = "block";
+      isContentHidden = false;
+    } else {
+      contentAside.style.display = "none";
+      iconAside.style.display = "block";
+      isContentHidden = true;
+    }
+  });
 
   function filterItems(e) {
     let text = e.target.value.toLowerCase();
@@ -64,5 +81,7 @@ window.onload = () => {
       }
     });
   }
+
+  //   make email body
   showAuthor();
 };

@@ -50,6 +50,19 @@ nav{
 }
 
 /* aside  */
+#hamburger-menu{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
 #topbar-aside{
     display: flex;
     gap: 1rem;
