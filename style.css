@@ -1,7 +1,7 @@
 body{
     background-color: black;
     color: white;
-    font: 15px/1.5 Arial, Helvetica, sans-serif ;
+    font: 14px/1.5 Arial, Helvetica, sans-serif ;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -34,10 +34,10 @@ nav{
     display: flex;
     font-size: 20px;
     justify-content: space-between;
-    margin: 0 auto;
     padding-block: 8px;
     box-sizing: border-box;
     min-width: min-content;
+    width: 83%;
 }
 
 #navbar{
@@ -151,14 +151,22 @@ section{
     background-color: rgba(51,51,51,0.8);
     border-radius: 16px;
     margin-bottom: 16px;
-    overflow-y: hidden;
     padding: 8px;
     padding-left: 16px;
     padding-right: 24px;
+    width: 80%;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+    height: 450px;
+    overflow-y: auto;
+    margin-bottom: 30px;
   }
-  toolbar-section-bottom-buttons, button{
+  button{
     width: 35%;
     padding-block: 14px;
+  }
+  #toolbar-section-bottom-buttons{
+  border-bottom: solid 1px lightgrey;
   }
   .btn-reset > i{
     padding-right: 1rem;
@@ -169,6 +177,8 @@ section{
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    padding-block: 10px;
+    border-bottom: solid 1px lightgray;
   }
   .left-part-email{
     display: flex;
@@ -179,9 +189,21 @@ section{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: lightgray;
+    font-weight: lighter;
 }
   .email-icons{
     display: flex;
     gap: 1rem;
+  }
+
+  .bold{
+    font-weight: bold;
+    color: white;
+  }
+  .email-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
