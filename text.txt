@@ -1,0 +1,102 @@
+// single element
+
+document.getElementById('element')
+document.querySelector('.element') or ('#element') 
+
+// multiple element
+// generano una lista di elementi
+
+document.querySelectorAll('.element') or ('#element') 
+document.getElementsByClassName('element')
+element[0].style.color = 'black'
+element[1].innerText = 'hello'
+document.getElementsByTagName('li')
+
+
+
+
+
+// ciclo forEach()
+// applica per tutti gli elementi element di una lista la funzione 
+
+element.forEach(element) => console.log(element)
+
+
+
+
+
+// ciclo for()
+
+for(let i = 0; i < array.length; i++){
+    let item = array[i]
+}
+
+
+
+
+// selected target element
+
+ul.lastElementChild.remove()                 // seleziona solo l'ultimo
+ul.firstElementChild.textContent = 'hello'   // seleziona solo il primo
+ul.children[1].innerText = 'hi'              // seleziona solo il figlio all'indice 1 di ul
+
+
+
+
+// addEventListener()
+
+const btn = document.querySelector('.btn') 
+
+btn.addEventListener('click',(e) =>{ e.preventDefault()})
+
+
+
+
+// selected odd or even element with circle
+
+let odd = document.querySelectorAll('li:nth-child(odd)');
+let even = document.querySelectorAll('li:nth-child(even)');
+
+for(let i = 0; i < odd.length; i++){
+    odd[i].style.backgroundColor = '#f4f4f4';
+    even[i].style.backgroundColor = '#ccc';
+}
+
+
+
+
+// DOM traversing
+
+let itemList = document.querySelector('#items')
+
+itemList.parentNode               // seleziona il genitore dell'elemento
+itemList.parentElement            // seleziona il genitore dell'elemento
+itemList.childNodes               // seleziona i figli dell'elemento
+itemList.children                 // seleziona un figlio dell'elemento
+itemList.children[]               // seleziona un figlio dell'elemento
+itemList.firstChild               // seleziona il primo nodo figlio dell'elemento e può trattarsi anche di un testo o commento
+itemList.firstElementChild        // seleziona il primo nodo elemento figlio dell'elemento selezionato non include il contenuto
+itemList.lastChild                // seleziona l'ultimo nodo figlio dell'elemento e può trattarsi anche di un testo o commento
+itemList.lastElementChild         // seleziona l'ultimo nodo elemento figlio dell'elemento selezionato non include il contenuto
+itemList.nextSibling              // seleziona il nodo fratello dell'elemento e può trattarsi anche di un testo o commento
+itemList.nextElementSibling       // seleziona il nodo fratello dell'elemento selezionato non include il contenuto
+itemList.priviusSibling           // seleziona il nodo fratello successivo dell'elemento e può trattarsi anche di un testo o commento
+itemList.priviusElementSibling    // seleziona il nodo fratello successivo dell'elemento selezionato non include il contenuto
+
+
+
+
+// CREATE element
+
+let newDiv = documet.createElement('div')   // crea un nuovo elemento
+newDiv.className = 'hello'                  // crea una nuova classe
+newDiv.serAttribute('title', 'hello')       // crea un nuovo attributo e prende come parametri l'attributo che si vuole creare e il valore
+
+var newDivText = document.createTextNode('hello')   // crea un nuovo elemento di testo
+ 
+newDiv.appendChild(newDivText)     // consente di aggiungere a un nodo genitore un nodo figlio alla fine dell'elenco
+
+let container = document.querySelector('header .container')
+var h1 = document.querySelector('header h1')
+container.insertBefore(newDiv, h1)  // consente di inserire un nodo figlio in un nodo già esistente aggiungendolo prima, come parametri prende l'elemento da aggiungere e il contenitore a cui deve essere appeso
+
