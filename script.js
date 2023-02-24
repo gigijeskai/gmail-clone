@@ -60,16 +60,16 @@ window.onload = () => {
     if (isContentHidden) {
       contentAside.style.display = "block";
       isContentHidden = false;
-      let icons = contentAside.querySelectorAll("#aside-container i");
-      for (let i = 0; i < icons.length; i++) {
-        icons[i].style.display = "none";
+      let text = contentAside.querySelectorAll("#aside-container span");
+      for (let i = 0; i < text.length; i++) {
+        text[i].style.display = "block";
       }
     } else {
-      contentAside.style.display = "none";
+      contentAside.style.display = "block";
       isContentHidden = true;
-      let icons = contentAside.querySelectorAll("#aside-container i");
-      for (let i = 0; i < icons.length; i++) {
-        icons[i].style.display = "block";
+      let text = contentAside.querySelectorAll("#aside-container span");
+      for (let i = 0; i < text.length; i++) {
+        text[i].style.display = "none";
       }
     }
   });
