@@ -55,7 +55,6 @@ window.onload = () => {
   filter.addEventListener("keyup", filterItems);
   let toggleMenu = document.getElementById("hamburger-menu");
   let contentAside = document.getElementById("aside-container");
-  let iconAside = document.getElementsByTagName("i");
   let isContentHidden = false;
 
   toggleMenu.addEventListener("click", function () {
@@ -64,7 +63,7 @@ window.onload = () => {
       isContentHidden = false;
     } else {
       contentAside.style.display = "none";
-      iconAside.style.display = "block";
+
       isContentHidden = true;
     }
   });
