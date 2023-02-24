@@ -56,15 +56,21 @@ window.onload = () => {
   let toggleMenu = document.getElementById("hamburger-menu");
   let contentAside = document.getElementById("aside-container");
   let isContentHidden = false;
-
   toggleMenu.addEventListener("click", function () {
     if (isContentHidden) {
       contentAside.style.display = "block";
       isContentHidden = false;
+      let icons = contentAside.querySelectorAll("#aside-container i");
+      for (let i = 0; i < icons.length; i++) {
+        icons[i].style.display = "none";
+      }
     } else {
       contentAside.style.display = "none";
-
       isContentHidden = true;
+      let icons = contentAside.querySelectorAll("#aside-container i");
+      for (let i = 0; i < icons.length; i++) {
+        icons[i].style.display = "block";
+      }
     }
   });
 
