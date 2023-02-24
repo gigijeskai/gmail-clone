@@ -121,6 +121,13 @@ ul {
     margin: 0; 
   }
 
+  #scroll-div h3{
+    margin-block: 1rem;
+  }
+  #scroll-div ul:last-child{
+    margin-block: 2rem;
+  }
+
   /* topbar main content  */
 #searchbar{
     display: flex;
