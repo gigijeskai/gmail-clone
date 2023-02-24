@@ -61,6 +61,7 @@ window.onload = () => {
       contentAside.style.display = "block";
       isContentHidden = false;
       let text = contentAside.querySelectorAll("#aside-container span");
+      document.getElementById("scrivi").style.minWidth = "96px";
       for (let i = 0; i < text.length; i++) {
         text[i].style.display = "block";
       }
@@ -71,6 +72,7 @@ window.onload = () => {
       for (let i = 0; i < text.length; i++) {
         text[i].style.display = "none";
       }
+      document.getElementById("scrivi").style.minWidth = "60px";
     }
   });
 
